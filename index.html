@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="Smit Bhanushali — .NET Cloud Engineer specializing in C#, .NET, ASP.NET Core, Azure, and AWS. Building scalable backend systems and REST APIs." />
+  <meta name="keywords"
+    content=".NET Cloud Engineer, Backend Developer, C#, ASP.NET Core, Azure, AWS, Microservices, Smit Bhanushali" />
+  <meta name="author" content="Smit Bhanushali" />
+  <meta property="og:title" content="Smit Bhanushali | DevOps Engineer" />
+  <meta property="og:description"
+    content="DevOps Engineer experienced in AWS, GCP, Kubernetes, Docker, and Terraform." />
+  <meta property="og:type" content="website" />
+  <title>Smit Bhanushali | .NET Cloud Engineer & Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Devicon CDN for tech icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+
+  <!-- Boxicons for UI icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       LOADING / BOOT SEQUENCE OVERLAY
+  ============================================================ -->
+  <div id="boot-overlay" aria-hidden="true">
+    <div class="boot-content">
+      <div class="boot-logo">Smit Bhanushali</div>
+      <div class="boot-terminal">
+        <span class="boot-text" id="boot-text"></span>
+        <span class="boot-cursor">█</span>
+      </div>
+      <div class="boot-progress-wrap">
+        <div class="boot-progress-bar" id="boot-progress"></div>
+      </div>
+      <div class="boot-status" id="boot-status">Initializing...</div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCROLL PROGRESS BAR
+  ============================================================ -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Smit Bhanushali — Back to top">
+        <span class="logo-initials">SB</span>
+        <span class="logo-text">Smit Bhanushali</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certs</a></li>
+        <li><a href="#publications" class="nav-link" data-section="publications">Pubs</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+
+        <!-- Resume Download -->
+        <!-- TODO: replace href="#" with the actual resume PDF path -->
+        <a href="assets/Smit_Bhanushali_Resume.pdf" class="btn btn-outline" download aria-label="Download resume PDF">
+          <i class="bx bx-download" aria-hidden="true"></i>
+          Download Resume
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main>
+
+    <!-- ====================================================
+         1. HERO SECTION
+    ==================================================== -->
+    <section id="hero" class="section hero-section" aria-label="Hero — Introduction">
+
+      <!-- Animated particle/grid background canvas -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Floating tech icons around profile -->
+      <div class="floating-icons" aria-hidden="true">
+        <!-- Kept original icons -->
+        <div class="float-icon fi-aws" style="--fi-x:12%; --fi-y:18%; --dur:7s; --delay:0s">
+          <i class="devicon-amazonwebservices-plain colored"></i>
+        </div>
+        <div class="float-icon fi-azure" style="--fi-x:88%; --fi-y:55%; --dur:8s; --delay:2s">
+          <i class="devicon-azure-plain colored"></i>
+        </div>
+        <div class="float-icon fi-docker" style="--fi-x:75%; --fi-y:80%; --dur:6s; --delay:1.5s">
+          <i class="devicon-docker-plain colored"></i>
+        </div>
+        <div class="float-icon fi-terraform" style="--fi-x:20%; --fi-y:85%; --dur:11s; --delay:3s">
+          <i class="devicon-terraform-plain colored"></i>
+        </div>
+
+        <!-- Newly added icons -->
+        <div class="float-icon" style="--fi-x:30%; --fi-y:10%; --dur:8.5s; --delay:0.5s">
+          <i class="devicon-csharp-plain colored"></i>
+        </div>
+        <div class="float-icon" style="--fi-x:80%; --fi-y:25%; --dur:9s; --delay:1s">
+          <i class="devicon-dotnetcore-plain colored"></i>
+        </div>
+        <div class="float-icon" style="--fi-x:5%; --fi-y:45%; --dur:10s; --delay:2.5s">
+          <i class="devicon-microsoftsqlserver-plain colored"></i>
+        </div>
+
+        <!-- Custom BoxIcons and SVGs -->
+        <div class="float-icon" style="--fi-x:15%; --fi-y:70%; --dur:7.5s; --delay:1.2s">
+          <i class="bx bx-data" style="color: #0078D4; font-size: 2.5rem;"></i>
+        </div>
+        <div class="float-icon" style="--fi-x:65%; --fi-y:90%; --dur:8s; --delay:4s">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <circle cx="64" cy="64" r="60" fill="#892CA0" /><text x="50%" y="55%" font-size="40" text-anchor="middle"
+              dominant-baseline="middle" fill="white" font-family="Arial">P</text>
+          </svg>
+        </div>
+        <div class="float-icon" style="--fi-x:90%; --fi-y:40%; --dur:10s; --delay:0.8s">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <circle cx="64" cy="64" r="60" fill="#FF6C37" /><text x="50%" y="55%" font-size="40" text-anchor="middle"
+              dominant-baseline="middle" fill="white" font-family="Arial">PM</text>
+          </svg>
+        </div>
+        <div class="float-icon" style="--fi-x:10%; --fi-y:30%; --dur:9.5s; --delay:3.5s">
+          <i class="bx bx-git-branch" style="color: #0078D4; font-size: 2.5rem;"></i>
+        </div>
+        <div class="float-icon" style="--fi-x:85%; --fi-y:70%; --dur:11s; --delay:0.2s">
+          <i class="bx bx-bolt-circle" style="color: #0078D4; font-size: 2.5rem;"></i>
+        </div>
+        <div class="float-icon" style="--fi-x:50%; --fi-y:5%; --dur:12s; --delay:2s">
+          <i class="bx bxl-aws" style="color: #FF9900; font-size: 2.5rem;"></i>
+        </div>
+        <div class="float-icon" style="--fi-x:40%; --fi-y:95%; --dur:7s; --delay:1.8s">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <circle cx="64" cy="64" r="60" fill="#0078D4" /><text x="50%" y="55%" font-size="40" text-anchor="middle"
+              dominant-baseline="middle" fill="white" font-family="Arial">B</text>
+          </svg>
+        </div>
+        <div class="float-icon" style="--fi-x:95%; --fi-y:15%; --dur:8.2s; --delay:0.4s">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <circle cx="64" cy="64" r="60" fill="#FF9900" /><text x="50%" y="55%" font-size="30" text-anchor="middle"
+              dominant-baseline="middle" fill="white" font-family="Arial">CDK</text>
+          </svg>
+        </div>
+        <div class="float-icon" style="--fi-x:25%; --fi-y:55%; --dur:10.5s; --delay:2.2s">
+          <i class="bx bx-transfer-alt" style="color: #3B82F6; font-size: 2.5rem;"></i>
+        </div>
+        <div class="float-icon" style="--fi-x:70%; --fi-y:15%; --dur:9s; --delay:3.1s">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <circle cx="64" cy="64" r="60" fill="#0078D4" /><text x="50%" y="55%" font-size="30" text-anchor="middle"
+              dominant-baseline="middle" fill="white" font-family="Arial">ADO</text>
+          </svg>
+        </div>
+        <div class="float-icon" style="--fi-x:5%; --fi-y:80%; --dur:8.8s; --delay:1.1s">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <circle cx="64" cy="64" r="60" fill="#CB171E" /><text x="50%" y="55%" font-size="30" text-anchor="middle"
+              dominant-baseline="middle" fill="white" font-family="Arial">YML</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content animate-hero">
+        <!-- Profile Photo -->
+        <div class="profile-wrap">
+          <div class="profile-ring" aria-hidden="true"></div>
+          <!-- Profile Photo -->
+          <img id="profile-photo" src="assets/profile.jpg" alt="Smit Bhanushali — .NET Cloud Engineer profile photo"
+            class="profile-photo" loading="eager" />
+        </div>
+
+        <!-- Text Content -->
+        <div class="hero-text">
+          <div class="hero-location">
+            <i class="bx bx-map-pin" aria-hidden="true"></i>
+            <span>Vadodara, Gujarat, India</span>
+          </div>
+
+          <h1 class="hero-name gradient-text" id="hero-name">Smit Bhanushali</h1>
+          <div class="hero-role">
+            <span class="role-prefix">// </span>
+            <span id="typed-role" class="typed-text" aria-live="polite"></span>
+            <span class="typed-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-summary">
+            <u><b>.NET Cloud Engineer</b></u> experienced in <span class="accent-k8s">C#</span>, <span
+              class="accent-tf">ASP.NET
+              Core</span>,
+            <span class="accent-k8s">Azure</span>, and <span class="accent-aws">AWS</span>,
+            building scalable backend systems and REST APIs.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="hero-social" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/smit2202-sde/" target="_blank" rel="noopener noreferrer"
+              class="social-link" style="--brand-color: #0077b5;" aria-label="LinkedIn profile">
+              <i class="bx bxl-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Stranger-Block" target="_blank" rel="noopener noreferrer" class="social-link"
+              style="--brand-color: #ffffff;" aria-label="GitHub profile">
+              <i class="bx bxl-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://leetcode.com/u/stranger2202/" target="_blank" rel="noopener noreferrer" class="social-link"
+              style="--brand-color: #FFA116;" aria-label="LeetCode profile">
+              <svg fill="currentColor" width="24" height="24" role="img" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>LeetCode</title>
+                <path
+                  d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+              </svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=cl2eUcIAAAAJ&hl=en" target="_blank"
+              rel="noopener noreferrer" class="social-link" style="--brand-color: #4285F4;" aria-label="Google Scholar">
+              <svg fill="currentColor" width="24" height="24" role="img" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>Google Scholar</title>
+                <path
+                  d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/stranger__3.0" target="_blank" rel="noopener noreferrer"
+              class="social-link" style="--brand-color: #E1306C;" aria-label="Instagram">
+              <i class="bx bxl-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:smitbhanushali27@gmail.com" class="social-link" style="--brand-color: #EA4335;"
+              aria-label="Send email to Smit Bhanushali">
+              <i class="bx bx-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Terminal Window -->
+          <div class="hero-terminal terminal-window glass-card" aria-label="Interactive Terminal">
+            <!-- Top Tabs Bar -->
+            <div class="ht-header">
+              <div class="ht-dots">
+                <span class="ht-dot red"></span>
+                <span class="ht-dot yellow"></span>
+                <span class="ht-dot green"></span>
+              </div>
+              <div class="ht-tabs">
+                <div class="ht-tab active">
+                  <i class="bx bxl-windows" aria-hidden="true"></i> powershell.exe
+                </div>
+              </div>
+              <div class="ht-status">
+                <span class="status-dot"></span> NOMINAL
+              </div>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="ht-body" id="hero-terminal-body">
+              <!-- Content generated by JS -->
+            </div>
+
+            <!-- Bottom Action Bar -->
+            <div class="ht-footer">
+              <button class="ht-cmd-btn" data-cmd="neofetch">neofetch</button>
+              <button class="ht-cmd-btn" data-cmd="about">about</button>
+              <button class="ht-cmd-btn" data-cmd="skills">skills</button>
+              <button class="ht-cmd-btn" data-cmd="projects">projects</button>
+              <button class="ht-cmd-btn ht-clear-btn" data-cmd="clear">clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Chevron -->
+      <a href="#about" class="scroll-chevron" aria-label="Scroll to About section">
+        <i class="bx bx-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ====================================================
+         2. ABOUT SECTION
+    ==================================================== -->
+    <section id="about" class="section about-section" aria-label="About Smit Bhanushali">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Who I Am</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="about-summary">
+              I am a passionate Software Engineer specializing in designing high-performance backend systems. With deep
+              expertise in <span style="color: var(--k8s); font-weight: 700;">C#</span>, <span
+                style="color: var(--tf); font-weight: 700;">.NET</span>, and <span
+                style="color: var(--tf); font-weight: 700;">ASP.NET Core</span>, I craft scalable, secure, and
+              production-ready applications. My cloud proficiency across <span
+                style="color: var(--azure); font-weight: 700;">Azure</span> and <span
+                style="color: var(--aws); font-weight: 700;">AWS</span> empowers me to deploy resilient microservices,
+              robust REST APIs, and highly available database architectures. I am driven by Clean Architecture
+              principles, observability, and a continuous pursuit of engineering excellence.
+            </p>
+          </div>
+
+          <!-- Stat Cards -->
+          <div class="stats-grid reveal">
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="bx bx-briefcase" aria-hidden="true"></i></div>
+              <div class="stat-number" data-target="2" data-suffix="+">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="bx bx-server" aria-hidden="true"></i></div>
+              <div class="stat-number" data-target="20" data-suffix="+">0</div>
+              <div class="stat-label">APIs Built</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="bx bxs-rocket" aria-hidden="true"></i></div>
+              <div class="stat-number" data-target="50" data-suffix="%">0</div>
+              <div class="stat-label">Performance Boost</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="bx bx-trending-up" aria-hidden="true"></i></div>
+              <div class="stat-number" data-target="99" data-suffix="%">0</div>
+              <div class="stat-label">Uptime Achieved</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Background SVG Architecture Illustration -->
+        <div class="about-bg-illustration" aria-hidden="true">
+          <svg viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="arch-svg">
+            <!-- Servers -->
+            <rect x="50" y="100" width="60" height="80" rx="6" stroke="currentColor" stroke-width="1.5"
+              stroke-dasharray="4 2" />
+            <line x1="80" y1="118" x2="80" y2="162" stroke="currentColor" stroke-width="1" />
+            <rect x="60" y="120" width="40" height="8" rx="2" stroke="currentColor" stroke-width="1" />
+            <rect x="60" y="134" width="40" height="8" rx="2" stroke="currentColor" stroke-width="1" />
+            <rect x="60" y="148" width="40" height="8" rx="2" stroke="currentColor" stroke-width="1" />
+            <!-- Cloud -->
+            <ellipse cx="250" cy="130" rx="60" ry="35" stroke="currentColor" stroke-width="1.5"
+              stroke-dasharray="6 3" />
+            <ellipse cx="230" cy="145" rx="40" ry="25" stroke="currentColor" stroke-width="1" />
+            <ellipse cx="275" cy="148" rx="35" ry="22" stroke="currentColor" stroke-width="1" />
+            <!-- Container -->
+            <rect x="420" y="95" width="70" height="90" rx="6" stroke="currentColor" stroke-width="1.5"
+              stroke-dasharray="4 2" />
+            <rect x="430" y="108" width="50" height="25" rx="4" stroke="currentColor" stroke-width="1" />
+            <rect x="430" y="140" width="50" height="25" rx="4" stroke="currentColor" stroke-width="1" />
+            <!-- Kubernetes -->
+            <circle cx="600" cy="140" r="45" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 3" />
+            <circle cx="600" cy="140" r="20" stroke="currentColor" stroke-width="1" />
+            <line x1="600" y1="95" x2="600" y2="120" stroke="currentColor" stroke-width="1" />
+            <line x1="600" y1="160" x2="600" y2="185" stroke="currentColor" stroke-width="1" />
+            <line x1="555" y1="140" x2="580" y2="140" stroke="currentColor" stroke-width="1" />
+            <line x1="620" y1="140" x2="645" y2="140" stroke="currentColor" stroke-width="1" />
+            <!-- Connecting lines -->
+            <line x1="110" y1="140" x2="190" y2="135" stroke="currentColor" stroke-width="1" stroke-dasharray="4 2" />
+            <line x1="310" y1="138" x2="420" y2="132" stroke="currentColor" stroke-width="1" stroke-dasharray="4 2" />
+            <line x1="490" y1="140" x2="555" y2="140" stroke="currentColor" stroke-width="1" stroke-dasharray="4 2" />
+            <!-- Monitoring -->
+            <rect x="680" y="100" width="80" height="80" rx="6" stroke="currentColor" stroke-width="1.5"
+              stroke-dasharray="4 2" />
+            <polyline points="695,160 710,130 725,150 740,115 755,140" stroke="currentColor" stroke-width="1.5"
+              fill="none" />
+            <line x1="645" y1="140" x2="680" y2="140" stroke="currentColor" stroke-width="1" stroke-dasharray="4 2" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         3. EXPERIENCE SECTION
+    ==================================================== -->
+    <!-- ===================================================
+       3. EXPERIENCE / CAREER PIPELINE
+    ==================================================== -->
+    <section id="experience" class="section exp-section" aria-label="Career Pipeline">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Career Pipeline</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="exp-cards-container">
+
+          <!-- JOB 1: FSP (Content Left, Diagram Right) -->
+          <!-- JOB 3 : FSP -->
+          <div class="experience-card glass-card reveal">
+
+            <div class="exp-content-side">
+
+              <!-- Company Header -->
+              <div class="exp-company-banner">
+
+                <div class="exp-banner-top">
+
+                  <div class="exp-logo-box" style="padding:0; overflow:hidden;">
+                    <img src="assets/fsp-logo.png" alt="FSP Logo" style="width:100%; height:100%; object-fit:cover;">
+                  </div>
+
+                  <div class="exp-role-info">
+                    <h3 class="exp-company-name">
+                      FSP
+                      <span class="exp-badge current-role">Current Role</span>
+                    </h3>
+
+                    <h4 class="exp-position">
+                      Cloud Engineer
+                    </h4>
+
+                  </div>
+
+                </div>
+
+                <div class="exp-banner-bottom">
+
+                  <span class="exp-meta-item">
+                    <i class="bx bx-briefcase"></i>
+                    Full-time
+                  </span>
+
+                  <span class="exp-meta-item">
+                    <i class="bx bx-map"></i>
+                    On-site
+                  </span>
+
+                  <span class="exp-meta-item">
+                    <i class="bx bx-calendar"></i>
+                    June 2026 – Present
+                  </span>
+
+                </div>
+
+              </div>
+
+              <!-- Description -->
+
+              <div class="exp-desc">
+
+                Designing enterprise cloud integration solutions using
+                <strong>Azure Logic Apps</strong>,
+                <strong>Azure API Management (APIM)</strong>,
+                <strong>Azure Functions</strong>, and
+                <strong>Cosmos DB</strong>. Built automated workflows that ingest
+                data from multiple third-party APIs, securely expose and manage APIs
+                through APIM, process business logic using Azure Functions and Logic
+                Apps, store processed data in Cosmos DB, and deliver synchronized
+                information to client platforms through scalable cloud-native
+                architectures.
+
+              </div>
+
+            </div>
+
+            <!-- ================= DIAGRAM ================= -->
+
+            <div class="exp-diagram-side">
+
+              <div class="exp-diagram-container">
+
+                <div class="arch-diagram">
+
+                  <svg class="arch-svg-lines" viewBox="0 0 500 360" preserveAspectRatio="none">
+
+                    <defs>
+
+                      <filter id="exp-glow-1">
+
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+
+                        <feMerge>
+                          <feMergeNode in="coloredBlur" />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+
+                      </filter>
+
+                    </defs>
+
+                    <!-- Connections -->
+
+                    <!-- APIs -> Logic Apps -->
+
+                    <path class="flow-path" d="M 250 35 L 250 80" />
+
+                    <!-- Logic Apps -> APIM -->
+
+                    <path class="flow-path" d="M 250 105 L 250 145" />
+
+                    <!-- APIM -> Functions -->
+
+                    <path class="flow-path" d="M 250 170 L 170 235" />
+
+                    <!-- APIM -> Logic Apps -->
+
+                    <path class="flow-path" d="M 250 170 L 330 235" />
+
+                    <!-- Functions -> Cosmos -->
+
+                    <path class="flow-path" d="M 170 255 L 250 305" />
+
+                    <!-- Logic Apps -> Cosmos -->
+
+                    <path class="flow-path" d="M 330 255 L 250 305" />
+
+                    <!-- Cosmos -> Client -->
+
+                    <path class="flow-path" d="M 250 325 L 250 355" />
+
+                    <!-- ================= Packets ================= -->
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-1)">
+
+                      <animateMotion dur="2.5s" repeatCount="indefinite" path="M 250 35 L 250 80" />
+
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-1)">
+
+                      <animateMotion dur="2.5s" begin=".4s" repeatCount="indefinite" path="M 250 105 L 250 145" />
+
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-1)">
+
+                      <animateMotion dur="2.5s" begin=".8s" repeatCount="indefinite" path="M 250 170 L 170 235" />
+
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-1)">
+
+                      <animateMotion dur="2.5s" begin="1.2s" repeatCount="indefinite" path="M 250 170 L 330 235" />
+
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-1)">
+
+                      <animateMotion dur="2.5s" begin="1.6s" repeatCount="indefinite" path="M 170 255 L 250 305" />
+
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-1)">
+
+                      <animateMotion dur="2.5s" begin="2s" repeatCount="indefinite" path="M 330 255 L 250 305" />
+
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-1)">
+
+                      <animateMotion dur="2.5s" begin="2.4s" repeatCount="indefinite" path="M 250 325 L 250 355" />
+
+                    </circle>
+
+                  </svg>
+
+                  <!-- Top -->
+
+                  <div class="arch-node float-1" style="left:50%; top:10%;">
+
+                    <i class="bx bx-cloud-download"></i>
+
+                    <span>3rd Party APIs</span>
+
+                  </div>
+
+                  <!-- Logic Apps -->
+
+                  <div class="arch-node float-2" style="left:50%; top:28%;">
+
+                    <i class="bx bx-sitemap" style="color: #0078D4; font-size: 1.8rem;"></i>
+                    <span>Logic Apps</span>
+
+                  </div>
+
+                  <!-- APIM -->
+
+                  <div class="arch-node float-3" style="left:50%; top:46%;">
+
+                    <i class="bx bx-network-chart"></i>
+
+                    <span>Azure APIM</span>
+
+                  </div>
+
+                  <!-- Azure Functions -->
+
+                  <div class="arch-node float-1" style="left:34%; top:72%;">
+
+                    <i class="bx bx-cog"></i>
+
+                    <span>Azure Functions</span>
+
+                  </div>
+
+                  <!-- Logic Apps -->
+
+                  <div class="arch-node float-2" style="left:66%; top:72%;">
+
+                    <i class="bx bx-sitemap" style="color: #0078D4; font-size: 1.8rem;"></i>
+                    <span>Logic Apps</span>
+
+                  </div>
+
+                  <!-- Cosmos -->
+
+                  <div class="arch-node float-3" style="left:50%; top:92%;">
+
+                    <i class="bx bx-data"></i>
+
+                    <span>Cosmos DB</span>
+
+                  </div>
+
+                  <!-- Client -->
+
+                  <div class="arch-node float-1" style="left:50%; top:112%;">
+
+                    <i class="bx bx-desktop"></i>
+
+                    <span>Client Platform</span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- JOB 2: Atharva IT Services -->
+          <div class="experience-card reverse glass-card reveal">
+
+            <!-- ================= CONTENT ================= -->
+            <div class="exp-content-side">
+
+              <div class="exp-company-banner">
+
+                <div class="exp-banner-top">
+
+                  <div class="exp-logo-box" style="padding:0;overflow:hidden;">
+                    <img src="assets/atharva-logo.png" alt="Atharva IT Services Logo"
+                      style="width:100%;height:100%;object-fit:cover;">
+                  </div>
+
+                  <div class="exp-role-info">
+                    <h3 class="exp-company-name">Atharva IT Services</h3>
+                    <h4 class="exp-position">Junior .NET Developer</h4>
+                  </div>
+
+                </div>
+
+                <div class="exp-banner-bottom">
+                  <span class="exp-meta-item">
+                    <i class="bx bx-briefcase"></i>
+                    Full-time
+                  </span>
+
+                  <span class="exp-meta-item">
+                    <i class="bx bx-map"></i>
+                    Ahmedabad, Gujarat · On-site
+                  </span>
+
+                  <span class="exp-meta-item">
+                    <i class="bx bx-calendar"></i>
+                    Dec 2024 – Feb 2026
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="exp-desc">
+                Developed and maintained backend services and enterprise web applications
+                using <strong>ASP.NET Core</strong>, <strong>C#</strong>, and
+                <strong>SQL Server</strong>. Built integrations with Amazon SP-API and
+                other marketplace platforms through Azure Functions, storing unified
+                marketplace data in Cosmos DB before distributing it to SQL Server and
+                Snowflake. Optimized SQL queries, implemented xUnit testing, configured
+                LocalStack-based development environments, and contributed to Azure cloud
+                migration, documentation, and proof-of-concept development.
+              </div>
+
+            </div>
+
+            <!-- ================= DIAGRAM ================= -->
+
+            <div class="exp-diagram-side">
+
+              <div class="exp-diagram-container">
+
+                <div class="arch-diagram">
+
+                  <svg class="arch-svg-lines" viewBox="0 0 500 360" preserveAspectRatio="none">
+
+                    <defs>
+
+                      <filter id="exp-glow-atharva">
+
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+
+                        <feMerge>
+                          <feMergeNode in="coloredBlur" />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+
+                      </filter>
+
+                    </defs>
+
+                    <!-- ================= CONNECTIONS ================= -->
+
+                    <!-- Marketplace -> Azure -->
+
+                    <path class="flow-path" d="M 90 50 L 250 120" />
+
+                    <path class="flow-path" d="M 250 50 L 250 120" />
+
+                    <path class="flow-path" d="M 410 50 L 250 120" />
+
+                    <!-- Azure -> Cosmos -->
+
+                    <path class="flow-path" d="M 250 145 L 250 190" />
+
+                    <!-- Cosmos -> Snowflake -->
+
+                    <path class="flow-path" d="M 250 215 L 150 275" />
+
+                    <!-- Cosmos -> SQL -->
+
+                    <path class="flow-path" d="M 250 215 L 350 275" />
+
+                    <!-- Snowflake -> Platform -->
+
+                    <path class="flow-path" d="M 150 300 L 250 335" />
+
+                    <!-- SQL -> Platform -->
+
+                    <path class="flow-path" d="M 350 300 L 250 335" />
+
+                    <!-- ================= PACKETS ================= -->
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-atharva)">
+                      <animateMotion dur="2.5s" repeatCount="indefinite" path="M 90 50 L 250 120" />
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-atharva)">
+                      <animateMotion dur="2.5s" begin=".4s" repeatCount="indefinite" path="M 250 50 L 250 120" />
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-atharva)">
+                      <animateMotion dur="2.5s" begin=".8s" repeatCount="indefinite" path="M 410 50 L 250 120" />
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-atharva)">
+                      <animateMotion dur="2.5s" begin="1.2s" repeatCount="indefinite" path="M 250 145 L 250 190" />
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-atharva)">
+                      <animateMotion dur="2.5s" begin="1.6s" repeatCount="indefinite" path="M 250 215 L 150 275" />
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-atharva)">
+                      <animateMotion dur="2.5s" begin="2s" repeatCount="indefinite" path="M 250 215 L 350 275" />
+                    </circle>
+
+                  </svg>
+
+                  <!-- ================= NODES ================= -->
+
+                  <!-- Shopify -->
+
+                  <div class="arch-node float-1" style="left:18%; top:12%;">
+
+                    <i class="bx bxl-shopify"></i>
+
+                    <span>Shopify</span>
+
+                  </div>
+
+                  <!-- Amazon -->
+
+                  <div class="arch-node float-2" style="left:50%; top:12%;">
+
+                    <i class="bx bxl-amazon"></i>
+
+                    <span>Amazon SP-API</span>
+
+                  </div>
+
+                  <!-- Walmart -->
+
+                  <div class="arch-node float-3" style="left:82%; top:12%;">
+
+                    <i class="bx bx-store"></i>
+
+                    <span>Walmart</span>
+
+                  </div>
+
+                  <!-- Azure -->
+
+                  <div class="arch-node float-2" style="left:50%; top:35%;">
+
+                    <i class="devicon-azure-plain colored"></i>
+
+                    <span>Azure Functions</span>
+
+                  </div>
+
+                  <!-- Cosmos -->
+
+                  <div class="arch-node float-1" style="left:50%; top:56%;">
+
+                    <i class="bx bx-data"></i>
+
+                    <span>Cosmos DB</span>
+
+                  </div>
+
+                  <!-- Snowflake -->
+
+                  <div class="arch-node float-2" style="left:30%; top:82%;">
+
+                    <i class="bx bx-snowflake" style="color: #29B5E8; font-size: 1.8rem;"></i>
+                    <span>Snowflake</span>
+
+                  </div>
+
+                  <!-- SQL -->
+
+                  <div class="arch-node float-3" style="left:70%; top:82%;">
+
+                    <i class="devicon-microsoftsqlserver-plain colored"></i>
+
+                    <span>SQL Server</span>
+
+                  </div>
+
+                  <!-- Platform -->
+
+                  <div class="arch-node float-1" style="left:50%; top:102%;">
+
+                    <i class="devicon-dotnetcore-plain colored"></i>
+
+                    <span>E-Commerce Platform</span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- JOB 3: Arishti (Content Left, Diagram Right) -->
+          <div class="experience-card glass-card reveal">
+
+            <div class="exp-content-side">
+              <!-- Company Header Banner -->
+              <div class="exp-company-banner">
+                <div class="exp-banner-top">
+                  <div class="exp-logo-box" style="padding:0; overflow:hidden;">
+                    <img src="assets/arishti-logo.png" alt="Arishti Info Labs Logo"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div class="exp-role-info">
+                    <h3 class="exp-company-name">Arishti Info Labs</h3>
+                    <h4 class="exp-position">Software Engineer Intern</h4>
+                  </div>
+                </div>
+
+                <div class="exp-banner-bottom">
+                  <span class="exp-meta-item"><i class="bx bx-briefcase"></i> Internship</span>
+                  <span class="exp-meta-item"><i class="bx bx-map"></i> Ahmedabad, Gujarat · On-site</span>
+                  <span class="exp-meta-item"><i class="bx bx-calendar"></i> Feb 2024 – Aug 2024</span>
+                </div>
+              </div>
+
+              <div class="exp-desc">
+                Gained hands-on experience building enterprise backend applications using
+                <strong>ASP.NET Core</strong>, <strong>Web API</strong>, and
+                <strong>Entity Framework</strong>. Followed Git and GitHub collaboration
+                workflows, developed a scalable reporting engine with dependency injection
+                and asynchronous programming, authored technical documentation, and
+                collaborated with cross-functional teams to strengthen application
+                security and maintain industry best practices.
+              </div>
+            </div>
+
+            <div class="exp-diagram-side">
+              <div class="exp-diagram-container">
+                <div class="arch-diagram">
+
+                  <svg class="arch-svg-lines" viewBox="0 0 400 300" preserveAspectRatio="none">
+                    <defs>
+                      <filter id="exp-glow-3">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                        <feMerge>
+                          <feMergeNode in="coloredBlur" />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                      </filter>
+                    </defs>
+
+                    <!-- Connection Lines -->
+                    <path class="flow-path" d="M 60 150 L 145 150" />
+                    <path class="flow-path" d="M 145 150 L 230 150" />
+                    <path class="flow-path" d="M 230 150 L 315 150" />
+
+                    <!-- Animated Packets -->
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-3)">
+                      <animateMotion dur="1.2s" repeatCount="indefinite" path="M 60 150 L 145 150" />
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-3)">
+                      <animateMotion dur="1.2s" begin="0.4s" repeatCount="indefinite" path="M 145 150 L 230 150" />
+                    </circle>
+
+                    <circle class="svg-packet" r="3" filter="url(#exp-glow-3)">
+                      <animateMotion dur="1.2s" begin="0.8s" repeatCount="indefinite" path="M 230 150 L 315 150" />
+                    </circle>
+                  </svg>
+
+                  <!-- Architecture Nodes -->
+                  <div class="arch-node float-1" style="left:15%; top:50%;">
+                    <i class="bx bx-code-alt"></i>
+                    <span>ASP.NET Core</span>
+                  </div>
+
+                  <div class="arch-node float-2" style="left:38%; top:50%;">
+                    <i class="bx bxl-git"></i>
+                    <span>Git & GitHub</span>
+                  </div>
+
+                  <div class="arch-node float-3" style="left:62%; top:50%;">
+                    <i class="bx bx-bar-chart-alt-2"></i>
+                    <span>Reporting API</span>
+                  </div>
+
+                  <div class="arch-node float-2" style="left:85%; top:50%;">
+                    <i class="bx bx-shield-quarter"></i>
+                    <span>Security</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         4. SKILLS SECTION
+    ==================================================== -->
+    <section id="skills" class="section skills-section" aria-label="Technical Skills">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Tech Stack</h2>
+          <p class="section-subtitle">Click any skill tag to learn what it is &amp; how I've used it</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Cursor-reactive spotlight (desktop only) -->
+
+        <div class="pyramid-container" id="skills-grid">
+
+
+          <div class="pyramid-glow-bg"></div>
+
+          <div class="pyramid-row">
+            <div class="pyramid-card" data-skill="csharp"><i class="devicon-csharp-plain colored"></i><span>C#</span>
+            </div>
+            <div class="pyramid-card" data-skill="aspnet"><i
+                class="devicon-dotnetcore-plain colored"></i><span>ASP.NET</span></div>
+            <div class="pyramid-card" data-skill="efcore"><i class="bx bx-layer" style="color:#68217A"></i><span>Entity
+                Framework</span></div>
+            <div class="pyramid-card" data-skill="javascript"><i
+                class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="pyramid-card" data-skill="angular"><i
+                class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+            <div class="pyramid-card" data-skill="html"><i class="devicon-html5-plain colored"></i><span>HTML</span>
+            </div>
+            <div class="pyramid-card" data-skill="mssql"><i
+                class="devicon-microsoftsqlserver-plain colored"></i><span>MSSQL</span></div>
+            <div class="pyramid-card" data-skill="mysql"><i class="devicon-mysql-plain colored"></i><span>MySQL</span>
+            </div>
+            <div class="pyramid-card" data-skill="css"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+            <div class="pyramid-card" data-skill="cosmosdb"><i class="bx bx-data" style="color:#5bc0de"></i><span>Cosmos
+                DB</span></div>
+            <div class="pyramid-card" data-skill="snowflake"><i class="bx bx-snowflake"
+                style="color:#29B5E8"></i><span>Snowflake</span></div>
+            <div class="pyramid-card" data-skill="azuredevops"><i class="bx bx-git-repo-forked"
+                style="color:#0078D4"></i><span>Azure DevOps</span></div>
+            <div class="pyramid-card" data-skill="jira"><i class="devicon-jira-plain colored"></i><span>Jira</span>
+            </div>
+            <div class="pyramid-card" data-skill="podman"><i class="bx bx-cube-alt"
+                style="color:#892CA0"></i><span>Podman</span></div>
+            <div class="pyramid-card" data-skill="docker"><i
+                class="devicon-docker-plain colored"></i><span>Docker</span></div>
+          </div>
+
+          <div class="pyramid-row">
+
+            <div class="pyramid-card" data-skill="azure"><i class="devicon-azure-plain colored"></i><span>Azure</span>
+            </div>
+            <div class="pyramid-card" data-skill="httptrigger"><i class="bx bx-globe"
+                style="color:#0078D4"></i><span>HTTP Trigger</span></div>
+            <div class="pyramid-card" data-skill="blob"><i class="bx bx-archive"
+                style="color:#0078D4"></i><span>Blob</span></div>
+            <div class="pyramid-card" data-skill="timer"><i class="bx bx-timer"
+                style="color:#0078D4"></i><span>Timer</span></div>
+            <div class="pyramid-card" data-skill="keyvault"><i class="bx bx-key" style="color:#0078D4"></i><span>Azure
+                Key Vault</span></div>
+            <div class="pyramid-card" data-skill="apim"><i class="bx bx-network-chart"
+                style="color:#0078D4"></i><span>Azure APIM</span></div>
+            <div class="pyramid-card" data-skill="logicapps"><i class="bx bx-sitemap"
+                style="color:#0078D4"></i><span>Azure Logic Apps</span></div>
+            <div class="pyramid-card" data-skill="azurequeue"><i class="bx bx-message-square-dots"
+                style="color:#0078D4"></i><span>Azure Queue</span></div>
+          </div>
+
+          <div class="pyramid-row">
+            <div class="pyramid-card" data-skill="aws"><i
+                class="devicon-amazonwebservices-plain colored"></i><span>AWS</span></div>
+            <div class="pyramid-card" data-skill="lambda"><i class="bx bx-code-curly"
+                style="color:#FF9900"></i><span>Lambda Functions</span></div>
+            <div class="pyramid-card" data-skill="s3"><i class="bx bx-box" style="color:#FF9900"></i><span>S3
+                Bucket</span></div>
+            <div class="pyramid-card" data-skill="sqs"><i class="bx bx-envelope"
+                style="color:#FF9900"></i><span>SQS</span></div>
+            <div class="pyramid-card" data-skill="dynamodb"><i class="bx bx-server"
+                style="color:#4053D6"></i><span>DynamoDB</span></div>
+            <div class="pyramid-card" data-skill="localstack"><i class="bx bx-layer"
+                style="color:#4285F4"></i><span>LocalStack</span></div>
+            <div class="pyramid-card" data-skill="swagger"><i class="bx bx-book-bookmark"
+                style="color:#85EA2D"></i><span>Swagger</span></div>
+            <div class="pyramid-card" data-skill="scalar"><i class="bx bx-code-alt"
+                style="color:#E1306C"></i><span>Scalar API</span></div>
+
+          </div>
+
+          <div class="pyramid-row">
+            <div class="pyramid-card" data-skill="git"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            <div class="pyramid-card" data-skill="github"><i
+                class="devicon-github-plain colored"></i><span>GitHub</span></div>
+            <div class="pyramid-card" data-skill="postman"><i class="bx bxs-paper-plane"
+                style="color:#ef5b25"></i><span>Postman</span></div>
+            <div class="pyramid-card" data-skill="xunit"><i class="bx bxs-flask"
+                style="color:#5cb85c"></i><span>xUnit</span></div>
+            <div class="pyramid-card" data-skill="copilot"><i class="bx bx-bot" style="color:#ffffff"></i><span>GitHub
+                Copilot</span></div>
+            <div class="pyramid-card" data-skill="claude"><i class="bx bx-brain"
+                style="color:#D97757"></i><span>Claude</span></div>
+            <div class="pyramid-card" data-skill="chatgpt"><i class="bx bx-message-rounded-dots"
+                style="color:#10A37F"></i><span>ChatGPT</span></div>
+            <div class="pyramid-card" data-skill="gemini"><i class="bx bx-sparkles"
+                style="color:#4285F4"></i><span>Google Gemini</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         5. PROJECTS SECTION
+    ==================================================== -->
+    <section id="projects" class="section projects-section" aria-label="Projects">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Cursor spotlight for projects -->
+
+        <div class="premium-projects-container" id="projects-grid">
+
+          <!-- PROJECT 1 -->
+          <div class="premium-project-card reveal">
+            <!-- Left Side: Diagram -->
+            <div class="pp-diagram-side">
+              <div class="pp-diagram-container">
+                <div class="arch-diagram">
+                  <svg class="arch-svg-lines" viewBox="0 0 400 300" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="rgba(0, 120, 212, 0.2)" />
+                        <stop offset="100%" stop-color="rgba(0, 120, 212, 0.8)" />
+                      </linearGradient>
+                      <filter id="glow">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                        <feMerge>
+                          <feMergeNode in="coloredBlur" />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                      </filter>
+                    </defs>
+
+                    <!-- Static Lines -->
+                    <path class="flow-path" d="M 50 150 L 150 150" />
+                    <path class="flow-path" d="M 150 150 L 250 75" />
+                    <path class="flow-path" d="M 150 150 L 250 225" />
+                    <path class="flow-path" d="M 250 75 L 350 75" />
+                    <path class="flow-path" d="M 250 225 L 350 225" />
+
+                    <!-- Animated Packets -->
+                    <circle class="svg-packet" r="3" filter="url(#glow)">
+                      <animateMotion dur="2s" repeatCount="indefinite" path="M 50 150 L 150 150" />
+                    </circle>
+                    <circle class="svg-packet" r="3" filter="url(#glow)">
+                      <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.5s" path="M 150 150 L 250 75" />
+                    </circle>
+                    <circle class="svg-packet" r="3" filter="url(#glow)">
+                      <animateMotion dur="2s" repeatCount="indefinite" begin="1s" path="M 150 150 L 250 225" />
+                    </circle>
+                    <circle class="svg-packet" r="3" filter="url(#glow)">
+                      <animateMotion dur="1.5s" repeatCount="indefinite" begin="1.2s" path="M 250 75 L 350 75" />
+                    </circle>
+                    <circle class="svg-packet" r="3" filter="url(#glow)">
+                      <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.8s" path="M 250 225 L 350 225" />
+                    </circle>
+                  </svg>
+
+                  <!-- Nodes -->
+                  <div class="arch-node float-1" style="left: 12.5%; top: 50%;"><i
+                      class="bx bx-laptop"></i><span>Client</span></div>
+                  <div class="arch-node float-2" style="left: 37.5%; top: 50%;"><i
+                      class="bx bx-network-chart"></i><span>API</span></div>
+                  <div class="arch-node float-3" style="left: 62.5%; top: 25%;"><i
+                      class="devicon-azure-plain colored"></i><span>Azure Func</span></div>
+                  <div class="arch-node float-1" style="left: 62.5%; top: 75%;"><i
+                      class="bx bx-list-ol"></i><span>Queue</span></div>
+                  <div class="arch-node float-2" style="left: 87.5%; top: 25%;"><i
+                      class="devicon-microsoftsqlserver-plain colored"></i><span>Database</span></div>
+                  <div class="arch-node float-3" style="left: 87.5%; top: 75%;"><i
+                      class="bx bx-receipt"></i><span>Logging</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="pp-content-side">
+              <div class="pp-meta">
+                <span class="pp-number">01</span>
+                <span class="pp-category">Serverless & Event-Driven</span>
+              </div>
+              <h3 class="pp-title">Serverless Task Processing</h3>
+              <div class="pp-accent-line"></div>
+              <p class="pp-desc">
+                Engineered a highly scalable event-driven architecture using ASP.NET Core Minimal APIs and Azure
+                Functions. Designed robust distributed workflows utilizing Azure Queue Storage for asynchronous task
+                processing and Microsoft SQL Server for secure state management.
+              </p>
+
+
+            </div>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="premium-project-card reverse reveal">
+            <!-- Left Side: Content -->
+            <div class="pp-content-side">
+              <div class="pp-meta">
+                <span class="pp-number">02</span>
+                <span class="pp-category">Full-Stack & CQRS</span>
+              </div>
+              <h3 class="pp-title">CRUD Application with Mediator</h3>
+              <div class="pp-accent-line"></div>
+              <p class="pp-desc">
+                Architected a high-performance CRUD application implementing the CQRS (Command Query Responsibility
+                Segregation) pattern with MediatR. Separated read and write operations for improved scalability and
+                integrated a responsive Angular frontend directly with the REST API.
+              </p>
+
+
+            </div>
+
+            <!-- Right Side: Diagram -->
+            <div class="pp-diagram-side">
+              <div class="pp-diagram-container">
+                <div class="arch-diagram">
+                  <svg class="arch-svg-lines" viewBox="0 0 400 300" preserveAspectRatio="none">
+                    <defs>
+                      <filter id="glow2">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                        <feMerge>
+                          <feMergeNode in="coloredBlur" />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                      </filter>
+                    </defs>
+                    <!-- Static Lines -->
+                    <path class="flow-path" d="M 60 80 L 150 80" />
+                    <path class="flow-path" d="M 150 80 L 250 80" />
+                    <path class="flow-path" d="M 250 80 L 340 80" />
+                    <path class="flow-path" d="M 340 80 C 340 150 340 220 340 220" />
+                    <path class="flow-path" d="M 340 220 L 200 220" />
+
+                    <!-- Animated Packets -->
+                    <circle class="svg-packet" r="3" filter="url(#glow2)">
+                      <animateMotion dur="1s" repeatCount="indefinite" path="M 60 80 L 150 80" />
+                    </circle>
+                    <circle class="svg-packet" r="3" filter="url(#glow2)">
+                      <animateMotion dur="1s" repeatCount="indefinite" begin="0.8s" path="M 150 80 L 250 80" />
+                    </circle>
+                    <circle class="svg-packet" r="3" filter="url(#glow2)">
+                      <animateMotion dur="1s" repeatCount="indefinite" begin="1.6s" path="M 250 80 L 340 80" />
+                    </circle>
+                    <circle class="svg-packet" r="3" filter="url(#glow2)">
+                      <animateMotion dur="1.2s" repeatCount="indefinite" begin="2.4s"
+                        path="M 340 80 C 340 150 340 220 340 220" />
+                    </circle>
+                    <circle class="svg-packet" r="3" filter="url(#glow2)">
+                      <animateMotion dur="1.5s" repeatCount="indefinite" begin="3.4s" path="M 340 220 L 200 220" />
+                    </circle>
+                  </svg>
+
+                  <!-- Nodes -->
+                  <div class="arch-node float-2" style="left: 15%; top: 26.6%;"><i
+                      class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+                  <div class="arch-node float-1" style="left: 37.5%; top: 26.6%;"><i
+                      class="bx bx-network-chart"></i><span>REST API</span></div>
+                  <div class="arch-node float-3" style="left: 62.5%; top: 26.6%;"><i
+                      class="devicon-dotnetcore-plain colored"></i><span>Minimal API</span></div>
+                  <div class="arch-node float-1" style="left: 85%; top: 26.6%;"><i
+                      class="bx bx-git-merge"></i><span>Mediator</span></div>
+                  <div class="arch-node float-2" style="left: 85%; top: 73.3%;"><i
+                      class="bx bx-shape-triangle"></i><span>CQRS</span></div>
+                  <div class="arch-node float-3" style="left: 50%; top: 73.3%;"><i
+                      class="devicon-microsoftsqlserver-plain colored"></i><span>SQL Server</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         6. CERTIFICATIONS SECTION
+    ==================================================== -->
+    <!-- ===================================================
+       6. PROFESSIONAL CERTIFICATIONS
+    ==================================================== -->
+    <section id="certifications" class="section premium-certs-section" aria-label="Professional Certifications">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Professional Certifications</h2>
+          <p class="section-subtitle">Industry-recognized certifications demonstrating expertise in cloud computing,
+            Azure, cybersecurity, and modern infrastructure.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="cert-cards-container">
+
+          <!-- Cert 1: Azure -->
+          <div class="premium-cert-card glass-card reveal stagger-1">
+            <div class="cert-bg-icon"><i class="bx bxs-cloud"></i></div>
+            <div class="cert-content-wrapper">
+              <div class="cert-left">
+                <div class="cert-logo"><i class="devicon-azure-plain colored"></i></div>
+                <div class="cert-info">
+                  <h3 class="cert-title gradient-text">Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+                  <span class="cert-org">Microsoft</span>
+                  <span class="cert-date">Issued June 2025</span>
+                </div>
+              </div>
+              <div class="cert-center">
+                <div class="cert-id-wrap">
+                  <span class="cert-label">Credential ID</span>
+                  <span class="cert-value">9952273ACE3BD557</span>
+                </div>
+                <div class="cert-skills">
+                  <span class="cert-skill-chip"><i class="devicon-azure-plain colored"></i> Microsoft Azure</span>
+                  <span class="cert-skill-chip"><i class="bx bx-cloud"></i> Cloud Computing</span>
+                  <span class="cert-skill-chip"><i class="bx bx-server"></i> Fundamentals of Cloud Computing</span>
+                </div>
+              </div>
+              <div class="cert-right">
+                <a href="https://learn.microsoft.com/en-us/users/2202smitbhanushali/credentials/9952273ace3bd557"
+                  class="cert-cta-btn glow-btn">View Credential <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: AWS Azure GCP -->
+          <div class="premium-cert-card glass-card reveal stagger-2">
+            <div class="cert-bg-icon"><i class="bx bx-server"></i></div>
+            <div class="cert-content-wrapper">
+              <div class="cert-left">
+                <div class="cert-logo" style="background: rgba(255,255,255,0.05); color:#E8EDF5;"><i
+                    class="bx bx-cloud"></i></div>
+                <div class="cert-info">
+                  <h3 class="cert-title gradient-text">AWS, Azure & Google Cloud</h3>
+                  <span class="cert-org">Scaler</span>
+                  <span class="cert-date">Issued June 2023</span>
+                </div>
+              </div>
+              <div class="cert-center">
+                <div class="cert-id-wrap">
+                  <span class="cert-label">Credential ID</span>
+                  <span class="cert-value">NoBktB1_Ns</span>
+                </div>
+                <div class="cert-skills">
+                  <span class="cert-skill-chip"><i class="bx bxl-aws" style="color:#FF9900;"></i> AWS</span>
+                  <span class="cert-skill-chip"><i class="devicon-azure-plain colored"></i> Azure</span>
+                  <span class="cert-skill-chip"><i class="bx bxl-google-cloud" style="color:#4285F4;"></i> Google
+                    Cloud</span>
+                  <span class="cert-skill-chip"><i class="bx bx-cloud"></i> Cloud Computing</span>
+                </div>
+              </div>
+              <div class="cert-right">
+                <a href="https://moonshot.scaler.com/s/sl/NoBktB1_Nshttps://moonshot.scaler.com/s/sl/NoBktB1_Ns"
+                  class="cert-cta-btn glow-btn">View Credential <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: Cybersecurity -->
+          <div class="premium-cert-card glass-card reveal stagger-3">
+            <div class="cert-bg-icon"><i class="bx bx-shield-quarter"></i></div>
+            <div class="cert-content-wrapper">
+              <div class="cert-left">
+                <div class="cert-logo" style="background: rgba(0, 191, 255, 0.1); color:#00BFFF;"><i
+                    class="bx bx-shield-quarter"></i></div>
+                <div class="cert-info">
+                  <h3 class="cert-title gradient-text">Cybersecurity Essentials</h3>
+                  <span class="cert-org">Cisco Networking Academy</span>
+                  <span class="cert-date">Issued February 2023</span>
+                </div>
+              </div>
+              <div class="cert-center">
+                <div class="cert-id-wrap">
+                  <span class="cert-label">Credential ID</span>
+                  <span class="cert-value">747c7fc2-ecf7-492c-a129-e256f4082107</span>
+                </div>
+                <div class="cert-skills">
+                  <span class="cert-skill-chip"><i class="bx bx-network-chart"></i> Networking</span>
+                  <span class="cert-skill-chip"><i class="bx bx-lock-alt"></i> Security</span>
+                  <span class="cert-skill-chip"><i class="bx bx-shield"></i> Cybersecurity</span>
+                </div>
+              </div>
+              <div class="cert-right">
+                <a href="https://www.credly.com/badges/747c7fc2-ecf7-492c-a129-e256f4082107/public_url"
+                  class="cert-cta-btn glow-btn">View Credential <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+       7. RESEARCH PUBLICATIONS
+    ==================================================== -->
+    <section id="publications" class="section premium-pubs-section" aria-label="Research Publications">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Research Publications</h2>
+          <p class="section-subtitle">Published research focused on blockchain, decentralized identity, digital
+            forensics, and secure distributed systems.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="pub-panels-container pub-grid">
+
+          <!-- Pub 1 -->
+          <div class="premium-pub-card glass-card reveal stagger-1">
+            <div class="pub-bg-icon"><i class="bx bx-cube-alt"></i></div>
+            <div class="pub-content-wrapper">
+              <div>
+                <h3 class="pub-title gradient-text">A Hybrid Blockchain Framework with Decentralized Identity for Secure
+                  Digital Forensics</h3>
+                <div class="pub-meta">
+                  <span class="pub-venue"><i class="bx bxs-institution"></i> National Forensic Sciences
+                    University</span>
+                  <span class="pub-date"><i class="bx bx-calendar"></i> February 13, 2026</span>
+                </div>
+              </div>
+
+              <div class="pub-footer">
+                <div class="pub-footer-left">
+                  <span class="pub-author"><i class="bx bx-user"></i> Smit Bhanushali et al.</span>
+                  <span class="pub-type"><i class="bx bx-book"></i> Conference Paper</span>
+                </div>
+                <a href="https://jcsdf.nfsu.ac.in/articles?id=87" class="pub-cta-btn glow-btn">View Publication <i
+                    class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pub 2 -->
+          <div class="premium-pub-card glass-card reveal stagger-2">
+            <div class="pub-bg-icon"><i class="bx bx-network-chart"></i></div>
+            <div class="pub-content-wrapper">
+              <div>
+                <h3 class="pub-title gradient-text">A Framework For Enhancing Supply Chain Management and Decentralized
+                  Identity On Blockchain</h3>
+                <div class="pub-meta">
+                  <span class="pub-venue"><i class="bx bxs-institution"></i> NIT Goa</span>
+                  <span class="pub-date"><i class="bx bx-calendar"></i> January 14, 2026</span>
+                </div>
+              </div>
+
+              <div class="pub-footer">
+                <div class="pub-footer-left">
+                  <span class="pub-author"><i class="bx bx-user"></i> Smit Bhanushali et al.</span>
+                  <span class="pub-type"><i class="bx bx-book"></i> Springer Publication</span>
+                </div>
+                <a href="https://link.springer.com/chapter/10.1007/978-981-95-2196-8_2"
+                  class="pub-cta-btn glow-btn">View Publication <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pub 3 -->
+          <div class="premium-pub-card glass-card reveal stagger-3">
+            <div class="pub-bg-icon"><i class="bx bx-shield-quarter"></i></div>
+            <div class="pub-content-wrapper">
+              <div>
+                <h3 class="pub-title gradient-text">Smart Forensics: A Blockchain Contract Approach Review</h3>
+                <div class="pub-meta">
+                  <span class="pub-venue"><i class="bx bxs-institution"></i> National Forensic Sciences
+                    University</span>
+                  <span class="pub-date"><i class="bx bx-calendar"></i> October 4, 2024</span>
+                </div>
+              </div>
+
+              <div class="pub-footer">
+                <div class="pub-footer-left">
+                  <span class="pub-author"><i class="bx bx-user"></i> Smit Bhanushali et al.</span>
+                  <span class="pub-type"><i class="bx bx-book"></i> Review Paper</span>
+                </div>
+                <a href="https://jcsdf.nfsu.ac.in/Articles?id=58" class="pub-cta-btn glow-btn">View Publication <i
+                    class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         7. CONTACT SECTION
+    ==================================================== -->
+    <section id="contact" class="section contact-section" aria-label="Contact Smit Bhanushali">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-layout-wrapper">
+
+          <!-- 1. Contact Details -->
+          <div class="contact-details-layout reveal">
+            <p class="contact-intro text-center">
+              Have a project in mind, a Cloud challenge to solve, or just want to connect?<br>
+              Drop a message — I'd love to hear from you.
+            </p>
+
+            <div class="hero-social" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/smit2202-sde/" target="_blank" rel="noopener noreferrer"
+                class="social-link" style="--brand-color: #0077b5;" aria-label="LinkedIn profile">
+                <i class="bx bxl-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/Stranger-Block" target="_blank" rel="noopener noreferrer" class="social-link"
+                style="--brand-color: #ffffff;" aria-label="GitHub profile">
+                <i class="bx bxl-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://leetcode.com/u/stranger2202/" target="_blank" rel="noopener noreferrer"
+                class="social-link" style="--brand-color: #FFA116;" aria-label="LeetCode profile">
+                <svg fill="currentColor" width="24" height="24" role="img" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>LeetCode</title>
+                  <path
+                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                </svg>
+              </a>
+              <a href="https://scholar.google.com/citations?user=cl2eUcIAAAAJ&hl=en" target="_blank"
+                rel="noopener noreferrer" class="social-link" style="--brand-color: #4285F4;"
+                aria-label="Google Scholar">
+                <svg fill="currentColor" width="24" height="24" role="img" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>Google Scholar</title>
+                  <path
+                    d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/stranger__3.0" target="_blank" rel="noopener noreferrer"
+                class="social-link" style="--brand-color: #E1306C;" aria-label="Instagram">
+                <i class="bx bxl-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:smitbhanushali27@gmail.com" class="social-link" style="--brand-color: #EA4335;"
+                aria-label="Send email to Smit Bhanushali">
+                <i class="bx bx-envelope" aria-hidden="true"></i>
+              </a>
+
+            </div>
+            <a></a>
+          </div>
+        </div>
+
+        <!-- 2. Terminal & Form (Grid) -->
+        <div class="contact-grid reveal">
+          <!-- Interactive Contact Terminal -->
+          <div class="contact-terminal hero-terminal glass-card" style="max-width: 100%; margin-top: 0; height: 100%;"
+            aria-hidden="true">
+            <!-- Top Tabs Bar -->
+            <div class="ht-header">
+              <div class="ht-dots">
+                <span class="ht-dot red"></span>
+                <span class="ht-dot yellow"></span>
+                <span class="ht-dot green"></span>
+              </div>
+              <div class="ht-tabs">
+                <div class="ht-tab active">
+                  <i class="bx bxl-windows" aria-hidden="true"></i> powershell.exe
+                </div>
+              </div>
+              <div class="ht-status">
+                <span class="status-dot"></span> SECURE
+              </div>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="ht-body" id="contact-terminal-body"
+              style="flex-grow: 1; display: flex; flex-direction: column;">
+              <div class="t-row"><span class="t-prompt">smit@cloud_engineer:~$</span> </div>
+              <div class="t-row"><span class="t-dim">[INFO] Establishing secure connection... OK</span></div>
+              <div class="t-row"><span class="t-dim">[INFO] Waiting for user input stream...</span></div>
+              <br>
+              <div class="term-dynamic-content">
+                <div class="t-row"><span class="t-cyan" style="width: 70px; display: inline-block;">NAME ></span>
+                  <span id="term-out-name" class="t-cmd"></span><span class="term-cursor" id="cursor-name"
+                    style="display:inline-block;width:6px;height:12px;background:#C9D1D9;animation:blink 1s infinite"></span>
+                </div>
+                <div class="t-row"><span class="t-cyan" style="width: 70px; display: inline-block;">EMAIL ></span>
+                  <span id="term-out-email" class="t-cmd"></span><span class="term-cursor" id="cursor-email"
+                    style="display:none;width:6px;height:12px;background:#C9D1D9;animation:blink 1s infinite"></span>
+                </div>
+                <div class="t-row"><span class="t-cyan" style="width: 70px; display: inline-block;">MSG ></span> <span
+                    id="term-out-msg" class="t-cmd"></span><span class="term-cursor" id="cursor-msg"
+                    style="display:none;width:6px;height:12px;background:#C9D1D9;animation:blink 1s infinite"></span>
+                </div>
+              </div>
+
+              <div id="term-status-box" class="term-status-box" style="margin-top: auto; padding-top: 20px;"></div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <form id="contact-form" class="contact-form glass-card" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <div class="form-input-wrap">
+                  <i class="bx bx-user form-input-icon" aria-hidden="true"></i>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="Your Full Name" required
+                    autocomplete="name" aria-required="true" />
+                </div>
+                <span class="form-error" id="error-name" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <div class="form-input-wrap">
+                  <i class="bx bx-envelope form-input-icon" aria-hidden="true"></i>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="you@company.com"
+                    autocomplete="email" aria-required="true" />
+                </div>
+                <span class="form-error" id="error-email" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <div class="form-input-wrap">
+                  <i class="bx bx-message-square-detail form-input-icon form-icon-textarea" aria-hidden="true"></i>
+                  <textarea id="form-message" name="message" class="form-input form-textarea"
+                    placeholder="Tell me about your project or just say hi..." required rows="5"
+                    aria-required="true"></textarea>
+                </div>
+                <span class="form-error" id="error-message" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+                <i class="bx bx-send" aria-hidden="true"></i>
+                Send Message
+              </button>
+
+              <!-- Confetti container -->
+              <div id="confetti-container" aria-hidden="true"></div>
+            </form>
+          </div>
+          <a></a>
+        </div>
+
+        <!-- 3. Pipeline Status UI -->
+        <div class="contact-pipeline-wrap glass-card reveal" aria-hidden="true">
+          <div class="pipeline-header" id="pipeline-header">
+            <i class="bx bx-loader-alt bx-spin" id="pipeline-header-icon"></i> <span id="pipeline-header-text">Pipeline
+              Ready</span>
+          </div>
+          <div class="pipeline-track">
+            <div class="pipeline-node" id="node-build">
+              <div class="node-circle"><i class="bx bx-check"></i></div>
+              <div class="node-label">Build</div>
+            </div>
+            <div class="pipeline-line" id="line-1"></div>
+            <div class="pipeline-node" id="node-test">
+              <div class="node-circle"><i class="bx bx-check"></i></div>
+              <div class="node-label">Test</div>
+            </div>
+            <div class="pipeline-line" id="line-2"></div>
+            <div class="pipeline-node" id="node-release">
+              <div class="node-circle"><i class="bx bx-check"></i></div>
+              <div class="node-label">Release</div>
+            </div>
+            <div class="pipeline-line" id="line-3"></div>
+            <div class="pipeline-node" id="node-deploy">
+              <div class="node-circle"><i class="bx bx-check"></i></div>
+              <div class="node-label">Deploy</div>
+            </div>
+          </div>
+          <div class="pipeline-footer" id="pipeline-footer">
+            Waiting for trigger...
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-text">
+        © 2026 <strong>Smit Bhanushali</strong> — Built with ❤️ and a lot of
+        <code>dotnet run</code>
+      </p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        <i class="bx bx-up-arrow-alt" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SKILL MODAL
+  ============================================================ -->
+  <!-- Main JS -->
+
+
+  <!-- Skill Modal -->
+  <div class="skill-modal-overlay" id="skill-modal">
+    <div class="skill-modal-content glass-card">
+      <div class="sm-glow-blob"></div>
+      <button class="skill-modal-close" id="skill-modal-close"><i class="bx bx-x"></i></button>
+      <div class="skill-modal-header">
+        <div class="sm-icon-wrapper">
+          <i id="sm-icon" class=""></i>
+        </div>
+        <h3 id="sm-title">Skill Name</h3>
+      </div>
+      <div class="skill-modal-body">
+        <div class="sm-card-glass">
+          <div class="sm-card-header"><i class="bx bx-info-circle"></i> What it is</div>
+          <p id="sm-what">Description goes here.</p>
+        </div>
+        <div class="sm-card-glass sm-card-highlight">
+          <div class="sm-card-header"><i class="bx bx-rocket"></i> Why I use it</div>
+          <p id="sm-why">Reason goes here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- EmailJS Integration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/config.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: CONFIG.EMAILJS_PUBLIC_KEY,
+      });
+    })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
