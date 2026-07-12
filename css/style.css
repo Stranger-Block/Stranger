@@ -5618,3 +5618,178 @@ body {
 .premium-pubs-section { background: var(--bg-primary); }
 .contact-section { background: var(--bg-secondary); }
 .site-footer { background: var(--bg-primary); border-top: 1px solid var(--border); }
+/* ============================================================
+   MOBILE FIXES (Added by Assistant)
+============================================================ */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .hero-text {
+    align-items: center;
+  }
+  .hero-terminal {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 1rem auto 0 auto;
+  }
+  .exp-diagram-container {
+    min-height: 450px !important;
+    width: 100%;
+  }
+  .arch-diagram {
+    transform: scale(0.7) !important;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .exp-diagram-side {
+    min-height: 500px !important;
+    padding: 1rem !important;
+  }
+  .exp-diagram-container {
+    min-height: 400px !important;
+  }
+  .arch-diagram {
+    transform: scale(0.6) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-terminal {
+    font-size: 0.7rem;
+  }
+  .ht-body {
+    padding: 8px;
+  }
+  .ht-footer {
+    justify-content: center;
+  }
+  .exp-diagram-side {
+    min-height: 450px !important;
+  }
+  .exp-diagram-container {
+    min-height: 380px !important;
+  }
+  .arch-diagram {
+    transform: scale(0.5) !important;
+  }
+  .skills-grid, .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .arch-node {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .arch-node i {
+    font-size: 1.2rem !important;
+  }
+  .arch-node span {
+    font-size: 0.4rem !important;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 100px 1rem 4rem !important;
+  }
+  .hero-content {
+    min-width: 0;
+  }
+  .hero-text {
+    min-width: 0;
+  }
+  .hero-terminal {
+    min-width: 0;
+  }
+  .ht-body {
+    overflow-x: auto !important;
+  }
+  .t-ascii {
+    white-space: pre-wrap !important;
+    word-break: break-all;
+  }
+}
+@media (max-width: 768px) {
+  .t-ascii {
+    white-space: pre !important;
+    word-break: normal !important;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-terminal {
+    text-align: left !important;
+  }
+  .contact-terminal {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-terminal {
+    font-size: 0.65rem !important;
+  }
+  .t-ascii {
+    font-size: 0.65rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .nav-actions .btn-outline {
+    display: none !important;
+  }
+  .mobile-resume-item {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+  .mobile-resume-item .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-container {
+    justify-content: space-between !important;
+  }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    background: #0B1120 !important; /* solid background so it's not transparent */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+/* Revert previous aggressive scaling to make diagrams readable */
+@media (max-width: 1024px) {
+  .arch-diagram {
+    transform: scale(0.9) !important;
+  }
+}
+@media (max-width: 768px) {
+  .arch-diagram {
+    transform: scale(0.85) !important;
+  }
+}
+@media (max-width: 480px) {
+  .arch-diagram {
+    transform: scale(0.8) !important;
+  }
+  .arch-node {
+    width: 65px !important;
+    height: 65px !important;
+  }
+  .arch-node i {
+    font-size: 1.5rem !important;
+  }
+  .arch-node span {
+    font-size: 0.65rem !important;
+    line-height: 1.2;
+    padding-top: 4px;
+  }
+}
